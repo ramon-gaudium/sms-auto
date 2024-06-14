@@ -18,7 +18,7 @@ const (
 	RedisWriteError    int = 20001
 	RedisNotFoundError int = 20404
 
-	DefRedisConnectionString     = "127.0.0.1:6379"
+	DefRedisConnectionString     = "kdev-redis.gaudium.lan:6379"
 	DefRedisPoolSize         int = 20
 	DefRedisDialTimeout      int = 30
 
