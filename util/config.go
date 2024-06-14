@@ -1,7 +1,7 @@
 package util
 
 const (
-	DefaultHttpPort		= 8081
+	DefaultHttpPort		= 80
 	DefaultConfigPath   = "./etc/"
 	DefaultConfigFile   = "sms.conf"
 	DefaultLogPath      = "./var/log/microservices/"
@@ -18,7 +18,7 @@ func NewConfig(defRedisConnectionString string, defRedisPoolSize int, defRedisDi
 	return Config{DefaultLogPath + DefaultLogFile,
 		"D,I,W,E",
 		true,
-		"http://127.0.0.1:8090/api/logmachine",
+		"http://elb-kdev-microservices.gaudium.lan/api/logmachine",
 		"",
 		"",
 		Redis{defRedisConnectionString, defRedisPoolSize, defRedisDialTimeout},
